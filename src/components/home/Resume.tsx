@@ -16,7 +16,7 @@ export default function Resume() {
           </p>
 
           <h2 className="mt-4 text-5xl font-bold">
-            Interested in my background?
+            CV is Here!
           </h2>
 
           <p className="mt-8 max-w-2xl leading-8 text-gray-600">
