@@ -12,7 +12,7 @@ export default function Hero() {
 
             <p className="uppercase tracking-[0.3em] text-sm text-[var(--secondary)]">
               <br/>
-              Architecture Portfolio
+              Architecture Student | Designer 
             </p>
 
             <h1 className="mt-5 text-5xl lg:text-7xl font-bold leading-tight font-serif">
@@ -23,9 +23,9 @@ export default function Hero() {
             </h2>
 
             <p className="mt-6 max-w-xl text-lg leading-8 text-[var(--secondary)]">
-              An architecture student passionate about creating spaces that
-              connect people, nature, and everyday life through thoughtful
-              design.
+              Designing spaces that strengthen the connection
+              between people, nature and everyday experiences
+              through thoughtful architectural design.
             </p>
 
             <div className="mt-10">
@@ -38,7 +38,7 @@ export default function Hero() {
 
           </div>
 
-            <div className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-xl">
+            <div className="relative aspect-[4/3] overflow-hidden rounded-[40px] shadow-2xl">
 
                 <Image
                     src="/hero/hero.jpeg"

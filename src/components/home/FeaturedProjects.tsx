@@ -1,6 +1,7 @@
 import Container from "../ui/Container";
 import ProjectCard from "./ProjectCard";
 import { projects } from "../../data/projects";
+import SectionTitle from "../ui/SectionTitle";
 
 export default function FeaturedProjects() {
   return (
@@ -9,15 +10,15 @@ export default function FeaturedProjects() {
       className="py-32"
     >
       <Container>
-        <p className="text-sm uppercase tracking-[0.3em] text-gray-500">
-          Selected Works
-        </p>
+        <div className="max-w-3xl">
+         <SectionTitle
+            label="Portfolio"
+            title="Selected Works"
+            description="A curated selection of academic projects exploring light, ecology, and spatial experiences."
+          /> 
+        </div>
 
-        <h2 className="mt-4 text-5xl font-bold">
-          Featured Projects
-        </h2>
-
-        <div className="mt-10 grid gap-16 lg:grid-cols-2">
+        <div className=" space-y-28">
           {projects.map((project) => (
             <ProjectCard
               key={project.slug}

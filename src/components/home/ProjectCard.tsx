@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Project } from "../../types/project";
+import Button from "../ui/Button";
 
 interface Props {
   project: Project;
@@ -8,35 +9,60 @@ interface Props {
 
 export default function ProjectCard({ project }: Props) {
   return (
-    <Link href={`../projects/${project.slug}`}>
-        <article className="group">
-        <div className="overflow-hidden rounded-2xl">
-            <Image 
+    <Link href={`/projects/${project.slug}`}>
+      <article
+        className="
+            group
+            overflow-hidden
+            rounded-3xl
+            transition-all
+            duration-500
+            hover:-translate-y-2
+        "
+    >
+
+        <div className="overflow-hidden rounded-3xl mt-15">
+
+          <Image
             src={project.cover}
             alt={project.title}
-            width={1200}
-            height={900}
-            className="aspect-[4/3] w-full object-cover transition duration-700 group-hover:scale-105"
-            />
+            width={1800}
+            height={1200}
+            className="
+              w-full
+              h-auto
+              object-cover
+              transition
+              duration-700
+              group-hover:scale-105
+            "
+          />
+
         </div>
 
-        <div className="mt-6">
-            <h3 className="mt-3 text-4xl font-bold font-serif">
+        <div className="mt-12 max-w-4xl">
+
+          <p className="uppercase tracking-widest text-sm text-gray-500">
+            {project.type} • {project.year}
+          </p>
+
+          <h3 className="mt-3 text-5xl font-bold">
             {project.title}
-            </h3>
-            <div className="mt-4 flex flex-wrap gap-4 text-sm uppercase tracking-[0.1em] text-gray-600">
-                 <span>{project.type}
+          </h3>
 
-                {''} {project.year}</span>
-                <span>duration: {project.duration}</span>
-                <span>location: {project.location}</span>
-            </div>
-            <p className="mt-5 leading-7 text-gray-600">
+          <p className="mt-6 text-lg leading-8 text-gray-600">
             {project.summary}
-            </p>
+          </p>
+
+          <div className="mt-8">
+            <Button>
+              View Project
+            </Button>
+          </div>
 
         </div>
-        </article>
+
+      </article>
     </Link>
   );
 }
