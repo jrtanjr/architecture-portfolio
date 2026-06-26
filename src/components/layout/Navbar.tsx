@@ -1,23 +1,37 @@
+import Container from "../ui/Container";
+
+const navItems = [
+  { label: "Projects", href: "#projects" },
+  { label: "About", href: "#about" },
+  { label: "Resume", href: "#resume" },
+  { label: "Contact", href: "#contact" },
+];
+
 export default function Navbar() {
   return (
-    <header className="fixed top-0 left-0 w-full bg-white border-b border-gray-200 z-50">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-8 py-5">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#f8f7f3]/90 backdrop-blur-md border-b border-neutral-200">
+      <Container>
+        <div className="flex h-20 items-center justify-between">
+          <a href="#" className="text-base font-semibold tracking-wide">
+            ENA 
+          </a>
 
-        <h1 className="text-xl font-semibold tracking-wide">
-          ENA MEI CHEN HO
-        </h1>
-
-        <nav>
-          <ul className="flex gap-8 text-sm uppercase tracking-wider">
-            <li><a href="#">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-
-      </div>
+          <nav>
+            <ul className="hidden md:flex items-center gap-8 text-sm uppercase tracking-wider">
+              {navItems.map((item) => (
+                <li key={item.label}>
+                  <a
+                    href={item.href}
+                    className="transition hover:text-[var(--accent)]"
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </div>
+      </Container>
     </header>
   );
 }
