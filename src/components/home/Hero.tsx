@@ -8,10 +8,10 @@ export default function Hero() {
           Architecture Portfolio
         </p>
 
-        <h1 className="text-6xl font-bold leading-tight">
-          Designing spaces
+        <h1 className="text-5xl font-bold leading-tight">
+          Architecture Should Listen
           <br />
-          that inspire.
+          Before It Speaks
         </h1>
 
         <p className="mt-8 max-w-2xl text-gray-600 text-lg">
