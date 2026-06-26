@@ -20,10 +20,10 @@ export const projects: Project[] = [
       "A two-storey community hub designed to enhance Metropolitan Lake Kepong through light, community spaces, and stronger connections between land and water.",
 
     images: [
-      "/projects/lucent-canopy/image01.jpg",
-      "/projects/lucent-canopy/image02.jpg",
-      "/projects/lucent-canopy/image03.jpg",
-      "/projects/lucent-canopy/image04.png",
+      "/projects/lucent-canopy/Image01.jpg",
+      "/projects/lucent-canopy/Image02.jpg",
+      "/projects/lucent-canopy/Image03.jpg",
+      "/projects/lucent-canopy/Image04.png",
     ],
 
     reflection:
@@ -49,10 +49,10 @@ export const projects: Project[] = [
       "A three-storey ecological-metabolist home exploring architecture as an evolving living system shaped by family and nature.",
 
     images: [
-      "/projects/natura-vitae/image01.jpg",
-      "/projects/natura-vitae/image02.jpg",
-      "/projects/natura-vitae/image03.jpg",
-      "/projects/natura-vitae/image04.jpg",
+      "/projects/natura-vitae/Image01.jpg",
+      "/projects/natura-vitae/Image02.jpg",
+      "/projects/natura-vitae/Image03.jpg",
+      "/projects/natura-vitae/Image04.jpg",
     ],
 
     reflection:

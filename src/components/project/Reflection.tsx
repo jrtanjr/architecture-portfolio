@@ -6,19 +6,27 @@ interface Props {
 
 export default function Reflection({ project }: Props) {
   return (
-    <section className="mt-32 rounded-[40px] bg-neutral-100 p-12">
+    <section className="mt-32 mb-32 max-w-4xl">
 
       <p className="uppercase tracking-[0.3em] text-sm text-gray-500">
         Reflection
+      </p>
+
+      <h2 className="mt-4 text-4xl font-bold">
+        What I Learned
+      </h2>
+
+      <div className="mt-10 border-l-4 border-[var(--accent)] pl-8">
+
+        <span className="text-6xl leading-none text-[var(--accent)]">
+          “
+        </span>
+
+        <p className="mt-4 text-lg leading-9 text-gray-600 whitespace-pre-line">
+          {project.reflection}
         </p>
 
-        <h2 className="mt-4 text-4xl font-bold">
-        What I Learned
-        </h2>
-
-      <p className="mt-8 max-w-4xl leading-8 text-gray-600">
-        {project.reflection}
-      </p>
+      </div>
 
     </section>
   );
